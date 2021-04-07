@@ -8,6 +8,8 @@ import Sidebar from './../components/Sidebar';
 import { Chart } from "react-google-charts";
 
 import config from "./../config";
+import { generalAction } from "../actions/generalAction";
+import Overlay from "./Overlay";
 
 const options = {
     hAxis: { title: "Date"},
@@ -57,6 +59,7 @@ class Home extends React.Component{
             <h1>Hourly Temp. in Berlin</h1>
             {chartHtml}
             </div>
+            <Overlay />
         </div>
         )
     }
@@ -65,14 +68,16 @@ class Home extends React.Component{
 function mapStateToProps(state){
     return{
         userState: state.users,
-        chartState: state.charts
+        chartState: state.charts,
+        generalState: state.generals
     }
 }
 
 function mapDispatchToProps(dispatch){
     return bindActionCreators({
         userAction : userAction,
-        chartAction : chartAction
+        chartAction : chartAction,
+        generalAction : generalAction
     }, dispatch)
 }
 

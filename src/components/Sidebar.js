@@ -10,12 +10,16 @@ class Sidebar extends React.Component{
         
     }
 
+    toggleMobileMenu = (e) => {
+        this.props.generalAction('TOGGLE_MOBILE_MENU', true);
+    }
+
     render(){
        return (
             <div className={`sidebar ${this.props.generalState.mobileMenuOpened ? "open" : ""}`} >
                 <ul>
-                    <li><Link to="/"><i className="fa fa-cloud"></i> Daily Weather Forecast </Link></li>
-                    <li><Link to="/hourly"><i className="fa fa-clock-o"></i> Hourly Weather Forecast </Link></li>
+                    <li><Link to="/" onClick={this.toggleMobileMenu}><i className="fa fa-cloud"></i> Daily Weather Forecast </Link></li>
+                    <li><Link to="/hourly" onClick={this.toggleMobileMenu}><i className="fa fa-clock-o"></i> Hourly Weather Forecast </Link></li>
                 </ul>
             </div>
         )

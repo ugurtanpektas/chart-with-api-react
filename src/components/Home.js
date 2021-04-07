@@ -8,6 +8,7 @@ import Sidebar from './../components/Sidebar';
 import { Chart } from "react-google-charts";
 
 import config from "./../config";
+import Overlay from "./Overlay";
 
 const options = {
     hAxis: { title: "Date"},
@@ -64,6 +65,7 @@ class Home extends React.Component{
                     <h1>Daily Temp. in Berlin</h1>
                     {chartHtml}
                 </div>
+                <Overlay />
             </div>
         )
     }

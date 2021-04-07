@@ -5,7 +5,7 @@ body,html{
 }
 .top-header{
     width: 100%;
-    height: 40px;
+    height: 70px;
     background-color: #333;
     color: #fff;
     display: flex;
@@ -15,6 +15,7 @@ body,html{
     box-sizing: border-box;
     position: fixed;
     z-index: 2;
+    font-size: 18px;
     a{
         color: #fff;
         text-decoration: none;
@@ -23,7 +24,7 @@ body,html{
 .sidebar{
     width: 20%;
     height: 100%;
-    margin-top: 40px;
+    margin-top: 70px;
     background-color: #eee;
     color: #333;
     position: fixed;
@@ -54,7 +55,8 @@ body,html{
     box-sizing: border-box;
 }
 .login-container{
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     height: 300px;
     margin: 100px auto;
     border:1px solid #ccc;
@@ -92,6 +94,9 @@ body,html{
 .mobile-menu{
     display: none;
 }
+.overlay{
+    display: none;
+}
 .logo{
     height: 40px;
     line-height: 40px;
@@ -119,5 +124,17 @@ body,html{
         cursor: pointer;
         color: #fff;
         margin-right: 10px;
+        font-size: 32px;
+    }
+    .overlay{
+        &.open{
+            display: block;
+        }
+        position: absolute;
+        top: 70px;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 1;
+        width: 100%;
+        height: 100%;
     }
 }
