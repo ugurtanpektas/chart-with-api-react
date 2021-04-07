@@ -1,11 +1,45 @@
-import {BrowserRouter , Router, Route} from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Route} from "react-router-dom";
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import {userAction} from './actions/userAction';
 
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
+import Login from "./components/Login";
+import Home from "./components/Home";
+import Hourly from "./components/Hourly";
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+import PrivateRoute from "./components/PrivateRoute"
+
+class App extends React.Component{
+
+  componentDidMount(){
+
+  }
+
+  render(){
+     return (
+      <Router>
+      <div className="App">      
+        <Route path='/login' component={Login} />
+        <PrivateRoute authed={this.props.userState.isLoggedIn} exact path='/' component={Home} />
+        <PrivateRoute authed={this.props.userState.isLoggedIn} exact path='/hourly' component={Hourly} />
+      </div>
+      </Router>
+      )
+  }
 }
 
-export default App;
+function mapStateToProps(state){
+  return{
+      userState: state.users
+  }
+}
+
+function mapDispatchToProps(dispatch){
+  return bindActionCreators({
+      userAction : userAction
+  }, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps) (App);
