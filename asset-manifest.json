@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/chart-with-api-react/static/css/main.b5ac1425.chunk.css",
+    "main.js": "/chart-with-api-react/static/js/main.acbd6e6b.chunk.js",
+    "main.js.map": "/chart-with-api-react/static/js/main.acbd6e6b.chunk.js.map",
+    "runtime-main.js": "/chart-with-api-react/static/js/runtime-main.61330529.js",
+    "runtime-main.js.map": "/chart-with-api-react/static/js/runtime-main.61330529.js.map",
+    "static/css/2.6de2696c.chunk.css": "/chart-with-api-react/static/css/2.6de2696c.chunk.css",
+    "static/js/2.7d8f7e17.chunk.js": "/chart-with-api-react/static/js/2.7d8f7e17.chunk.js",
+    "static/js/2.7d8f7e17.chunk.js.map": "/chart-with-api-react/static/js/2.7d8f7e17.chunk.js.map",
+    "static/js/3.f92e453c.chunk.js": "/chart-with-api-react/static/js/3.f92e453c.chunk.js",
+    "static/js/3.f92e453c.chunk.js.map": "/chart-with-api-react/static/js/3.f92e453c.chunk.js.map",
+    "index.html": "/chart-with-api-react/index.html",
+    "static/css/2.6de2696c.chunk.css.map": "/chart-with-api-react/static/css/2.6de2696c.chunk.css.map",
+    "static/css/main.b5ac1425.chunk.css.map": "/chart-with-api-react/static/css/main.b5ac1425.chunk.css.map",
+    "static/js/2.7d8f7e17.chunk.js.LICENSE.txt": "/chart-with-api-react/static/js/2.7d8f7e17.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/chart-with-api-react/static/media/fontawesome-webfont.f691f37e.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.61330529.js",
+    "static/css/2.6de2696c.chunk.css",
+    "static/js/2.7d8f7e17.chunk.js",
+    "static/css/main.b5ac1425.chunk.css",
+    "static/js/main.acbd6e6b.chunk.js"
+  ]
+}
