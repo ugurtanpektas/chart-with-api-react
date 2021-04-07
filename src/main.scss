@@ -53,3 +53,37 @@ body,html{
     box-sizing: border-box;
     overflow: auto;
 }
+.login-container{
+    width: 300px;
+    height: 300px;
+    margin: 100px auto;
+    border:1px solid #ccc;
+    border-radius: 20px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    input{
+        height: 40px;
+        border:1px solid #ccc;
+        border-radius: 10px;
+        display: block;
+        width: 100%;
+        outline: none;
+        margin-bottom: 20px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    button{
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+        background-color: #333;
+        border:1px solid #ccc;
+        color: #fff;
+        height: 40px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+}

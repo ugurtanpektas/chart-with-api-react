@@ -4,14 +4,32 @@ import {connect} from 'react-redux';
 import {userAction} from './../actions/userAction';
 
 class Login extends React.Component{
-
+    
+    constructor(props) {
+        super(props);
+    }
+    
     componentDidMount(){
         
     }
 
+    handleLogin = async (e) => {
+        e.preventDefault();
+        console.log('handle login');
+        this.props.userAction('SET_LOGGED_IN',true);
+        this.props.history.push('/');
+
+    }
     render(){
        return (
-            <h1>LOGIN PAGE</h1> 
+            <div className="login-container">
+                <form onSubmit={this.handleLogin}>
+                    <div>
+                        <input type="email" name="email" placeholder="Email address" required/>
+                        <button type="submit">Login</button>
+                    </div>
+                </form>
+            </div>
         )
     }
 }
