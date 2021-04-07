@@ -97,6 +97,9 @@ body,html{
     line-height: 40px;
     display: inline-block;
 }
+.logout{
+    cursor: pointer;
+}
 @media only screen and (max-width:760px)  {
     .sidebar{
         position: absolute;

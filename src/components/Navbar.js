@@ -1,8 +1,8 @@
 import React from "react";
-import {Link} from 'react-router-dom'
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {generalAction} from './../actions/generalAction';
+import { userAction } from "../actions/userAction";
 class Navbar extends React.Component{
 
     componentDidMount(){
@@ -11,6 +11,11 @@ class Navbar extends React.Component{
 
     toggleMobileMenu = (e) => {
         this.props.generalAction('TOGGLE_MOBILE_MENU', true);
+    }
+
+    logout = () => {
+        this.props.userAction('SET_LOGGED_IN',false);
+        sessionStorage.setItem('isLoggedIn', false);
     }
 
     render(){
@@ -25,7 +30,7 @@ class Navbar extends React.Component{
                     </div>
                 </div>
                 <div>
-                    <Link to="/login"> Logout</Link>
+                    <div className="logout" onClick={this.logout}> Logout</div>
                 </div>
             </div>
         )
@@ -40,7 +45,8 @@ function mapStateToProps(state){
 
 function mapDispatchToProps(dispatch){
     return bindActionCreators({
-        generalAction : generalAction
+        generalAction : generalAction,
+        userAction : userAction
     }, dispatch)
 }
 

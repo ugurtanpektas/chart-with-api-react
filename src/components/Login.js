@@ -5,16 +5,15 @@ import {userAction} from './../actions/userAction';
 
 class Login extends React.Component{
     
-    componentDidMount(){
+    componentDidMount = () => {
         
     }
 
     handleLogin = async (e) => {
         e.preventDefault();
-        console.log('handle login');
         this.props.userAction('SET_LOGGED_IN',true);
+        sessionStorage.setItem('isLoggedIn', true);
         this.props.history.push('/');
-
     }
     render(){
        return (
