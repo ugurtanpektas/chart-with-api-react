@@ -5,10 +5,6 @@ import {userAction} from './../actions/userAction';
 
 class Login extends React.Component{
     
-    constructor(props) {
-        super(props);
-    }
-    
     componentDidMount(){
         
     }

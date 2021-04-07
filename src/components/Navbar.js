@@ -9,7 +9,7 @@ class Navbar extends React.Component{
 
     render(){
        return (
-            <div class="top-header">
+            <div className="top-header">
                 <div>Chart Dashboard</div>
                 <div>
                     <Link to="/login"> Logout</Link>

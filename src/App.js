@@ -7,8 +7,6 @@ import {userAction} from './actions/userAction';
 import Login from "./components/Login";
 import Home from "./components/Home";
 import Hourly from "./components/Hourly";
-import Navbar from './components/Navbar';
-import Sidebar from './components/Sidebar';
 import PrivateRoute from "./components/PrivateRoute"
 
 class App extends React.Component{

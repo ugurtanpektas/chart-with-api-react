@@ -9,7 +9,7 @@ class Navbar extends React.Component{
 
     render(){
        return (
-            <div class="sidebar">
+            <div className="sidebar">
                 <ul>
                     <li><Link to="/">Daily Forecast </Link></li>
                     <li><Link to="/hourly">Hourly Forecast </Link></li>
