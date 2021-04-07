@@ -1,6 +1,6 @@
 const initialState = {
     email:null,
-    isLoggedIn : true,
+    isLoggedIn : false,
     loading:true
 };
 
