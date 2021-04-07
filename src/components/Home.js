@@ -11,7 +11,7 @@ import config from "./../config";
 
 const options = {
     hAxis: { title: "Date"},
-    vAxis: { title: "Temp. (Celcius)" }
+    vAxis: { title: "Temp. (Celsius)" }
   };
 
 class Home extends React.Component{

@@ -8,6 +8,7 @@ import { createStore } from 'redux';
 import {Provider} from 'react-redux';
 
 import './main.scss';
+import 'font-awesome/css/font-awesome.min.css';
 
 const store = createStore(Reducers);
 

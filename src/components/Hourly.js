@@ -11,7 +11,7 @@ import config from "./../config";
 
 const options = {
     hAxis: { title: "Date"},
-    vAxis: { title: "Temp. (Celcius)" }
+    vAxis: { title: "Temp. (Celsius)" }
   };
 
 class Home extends React.Component{
@@ -20,7 +20,6 @@ class Home extends React.Component{
         this.props.chartAction('LOADING', true);
         const getWeatherCall = await fetch(config.apiUrl+'data/2.5/onecall?lat=52.520008&lon=13.404954&appid='+config.apiKey+'&units='+config.units+'&exclude=daily,minutely,daily,alerts');
         const response = await getWeatherCall.json();
-        console.log('API RESPONSE : ', response);
         
         let setHourlyData = [[{type :'date', label:'Hour'}, 'Temp (C)', 'Feels Like']];
         response.hourly.forEach(wheaterElement => {
