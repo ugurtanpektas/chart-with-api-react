@@ -21,7 +21,9 @@ class Login extends React.Component{
             <div className="login-container">
                 <form onSubmit={this.handleLogin}>
                     <div>
+                        <p>This is mock login. U can use any email and password for login</p>
                         <input type="email" name="email" placeholder="Email address" required/>
+                        <input type="password" name="password" placeholder="Password - 12345" required/>
                         <button type="submit">Login</button>
                     </div>
                 </form>

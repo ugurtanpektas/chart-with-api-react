@@ -51,10 +51,9 @@ body,html{
     position: absolute;
     padding: 20px;
     box-sizing: border-box;
-    overflow: auto;
 }
 .login-container{
-    width: 300px;
+    width: 400px;
     height: 300px;
     margin: 100px auto;
     border:1px solid #ccc;
@@ -64,6 +63,8 @@ body,html{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
     input{
         height: 40px;
         border:1px solid #ccc;

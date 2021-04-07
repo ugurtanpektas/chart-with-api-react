@@ -43,7 +43,15 @@ class Home extends React.Component{
                     options={options}
                     width="100%"
                     height="400px"
-                    legendToggle
+                    controls={[
+                        {
+                          controlType: 'DateRangeFilter',
+                          options: {
+                            filterColumnLabel: 'Day',
+                            ui: { format: { pattern: 'dd' } },
+                          },
+                        },
+                      ]}
                     />
             )
        }
