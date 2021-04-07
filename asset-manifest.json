@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/chart-with-api-react/static/css/main.b5ac1425.chunk.css",
-    "main.js": "/chart-with-api-react/static/js/main.13ac6576.chunk.js",
-    "main.js.map": "/chart-with-api-react/static/js/main.13ac6576.chunk.js.map",
+    "main.js": "/chart-with-api-react/static/js/main.e19cf906.chunk.js",
+    "main.js.map": "/chart-with-api-react/static/js/main.e19cf906.chunk.js.map",
     "runtime-main.js": "/chart-with-api-react/static/js/runtime-main.61330529.js",
     "runtime-main.js.map": "/chart-with-api-react/static/js/runtime-main.61330529.js.map",
     "static/css/2.6de2696c.chunk.css": "/chart-with-api-react/static/css/2.6de2696c.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.6de2696c.chunk.css",
     "static/js/2.7d8f7e17.chunk.js",
     "static/css/main.b5ac1425.chunk.css",
-    "static/js/main.13ac6576.chunk.js"
+    "static/js/main.e19cf906.chunk.js"
   ]
 }
