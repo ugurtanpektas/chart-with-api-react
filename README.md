@@ -1,3 +1,5 @@
+# Demo URL
+[https://ugurtanpektas.github.io/chart-with-api-react/](https://ugurtanpektas.github.io/chart-with-api-react/)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

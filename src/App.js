@@ -17,7 +17,7 @@ class App extends React.Component{
 
   render(){
      return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
       <div className="App">      
         <Route path='/login' component={Login} />
         <PrivateRoute authed={this.props.userState.isLoggedIn} exact path='/' component={Home} />
